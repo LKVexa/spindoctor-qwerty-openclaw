@@ -1,0 +1,12 @@
+{
+  "id": "spindoctor-qwerty",
+  "name": "SpinDoctor Qwerty",
+  "version": "1.1.0",
+  "description": "Classical FP64 SpinDoctor 3.1.2 simulator: circuits, presets, function table and theory reports.",
+  "configSchema": { "type": "object", "properties": {}, "additionalProperties": false },
+  "skills": ["skills"],
+  "activation": { "onStartup": true },
+  "contracts": {
+    "tools": ["spindoctor_run_script", "spindoctor_run_preset", "spindoctor_list_presets", "spindoctor_report", "spindoctor_functions", "spindoctor_test_theory"]
+  }
+}

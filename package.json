@@ -1,0 +1,17 @@
+{
+  "name": "openclaw-plugin-spindoctor-qwerty",
+  "version": "1.1.0",
+  "description": "SpinDoctor 3.1.2 classical simulator with six native OpenClaw tools and a skill",
+  "type": "module",
+  "private": true,
+  "license": "GPL-3.0-or-later",
+  "author": "RUSSELL PHILIP SMITHSON <russellsmithson77@outlook.com>",
+  "engines": { "node": ">=24.16.0 <25 || >=26.1.0" },
+  "files": ["dist", "engine", "skills", "openclaw.plugin.json", "README.md", "FUNCTIONS.md", "LICENSE", "NOTICE", "COPYRIGHT"],
+  "openclaw": {
+    "extensions": ["./dist/index.js"],
+    "runtimeExtensions": ["./dist/index.js"],
+    "install": { "minHostVersion": ">=2026.10.1" },
+    "compat": { "pluginApi": ">=2026.10.1" }
+  }
+}
